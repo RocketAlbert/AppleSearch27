@@ -8,20 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		F60163B322C522910043858B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60163B222C522910043858B /* AppDelegate.swift */; };
-		F60163B522C522910043858B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60163B422C522910043858B /* ViewController.swift */; };
 		F60163B822C522910043858B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F60163B622C522910043858B /* Main.storyboard */; };
 		F60163BA22C522920043858B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F60163B922C522920043858B /* Assets.xcassets */; };
 		F60163BD22C522920043858B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F60163BB22C522920043858B /* LaunchScreen.storyboard */; };
+		F60163C622C525B00043858B /* AppleItemTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60163C522C525B00043858B /* AppleItemTableViewController.swift */; };
+		F60163C822C526160043858B /* AppleItemTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60163C722C526160043858B /* AppleItemTableViewCell.swift */; };
+		F60163CA22C529BA0043858B /* AppleItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60163C922C529BA0043858B /* AppleItem.swift */; };
+		F60163CC22C52C240043858B /* AppleItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F60163CB22C52C240043858B /* AppleItemController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F60163AF22C522910043858B /* AppleSearch27.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppleSearch27.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F60163B222C522910043858B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F60163B422C522910043858B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F60163B722C522910043858B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F60163B922C522920043858B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F60163BC22C522920043858B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F60163BE22C522920043858B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F60163C522C525B00043858B /* AppleItemTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleItemTableViewController.swift; sourceTree = SOURCE_ROOT; };
+		F60163C722C526160043858B /* AppleItemTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleItemTableViewCell.swift; sourceTree = "<group>"; };
+		F60163C922C529BA0043858B /* AppleItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleItem.swift; sourceTree = "<group>"; };
+		F60163CB22C52C240043858B /* AppleItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleItemController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +60,25 @@
 		F60163B122C522910043858B /* AppleSearch27 */ = {
 			isa = PBXGroup;
 			children = (
-				F60163B222C522910043858B /* AppDelegate.swift */,
-				F60163B422C522910043858B /* ViewController.swift */,
+				F60163C522C525B00043858B /* AppleItemTableViewController.swift */,
+				F60163C722C526160043858B /* AppleItemTableViewCell.swift */,
 				F60163B622C522910043858B /* Main.storyboard */,
+				F60163C922C529BA0043858B /* AppleItem.swift */,
+				F60163CB22C52C240043858B /* AppleItemController.swift */,
+				F60163C422C523880043858B /* Resources */,
+			);
+			path = AppleSearch27;
+			sourceTree = "<group>";
+		};
+		F60163C422C523880043858B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F60163B222C522910043858B /* AppDelegate.swift */,
 				F60163B922C522920043858B /* Assets.xcassets */,
 				F60163BB22C522920043858B /* LaunchScreen.storyboard */,
 				F60163BE22C522920043858B /* Info.plist */,
 			);
-			path = AppleSearch27;
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +152,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F60163B522C522910043858B /* ViewController.swift in Sources */,
+				F60163C822C526160043858B /* AppleItemTableViewCell.swift in Sources */,
+				F60163CC22C52C240043858B /* AppleItemController.swift in Sources */,
 				F60163B322C522910043858B /* AppDelegate.swift in Sources */,
+				F60163C622C525B00043858B /* AppleItemTableViewController.swift in Sources */,
+				F60163CA22C529BA0043858B /* AppleItem.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,7 +304,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CFV9N227P7;
-				INFOPLIST_FILE = AppleSearch27/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AppleSearch27/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,7 +322,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = CFV9N227P7;
-				INFOPLIST_FILE = AppleSearch27/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/AppleSearch27/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
